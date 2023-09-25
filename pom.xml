@@ -26,7 +26,7 @@
       <connection>scm:git:https://github.com/shuaass/javatest.git</connection>
       <developerConnection>scm:git:https://github.com/shuaass/javatest.git</developerConnection>
       <tag>head</tag>
-  </scm>
+    </scm>
   <build>
 
       <plugins>
@@ -185,4 +185,8 @@
 </project>
 
 
+<<<<<<< HEAD
 <!--mvn build-helper:parse-version versions:set \ release:prepare \ -DdevelopmentVersion =\${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}.0-SNAPSHOT \ release:perform -->
+=======
+<!--mvn build-helper:parse-version versions:set \ release:prepare \ -DdevelopmentVersion =\${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}.0-SNAPSHOT \ release:perform -->
+>>>>>>> f9018021ed622502db022c7e9b746dd6138f1e1b
