@@ -3,7 +3,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.10-SNAPSHOT</version>
+  <version>1.0.11</version>
   <name>my-app</name>
   <url>https://maven.apache.org</url>
   <dependencies>
@@ -25,7 +25,7 @@
     <scm>
       <connection>scm:git:https://github.com/shuaass/javatest.git</connection>
       <developerConnection>scm:git:https://github.com/shuaass/javatest.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>my-app-1.0.11</tag>
     </scm>
   <build>
 
@@ -212,3 +212,13 @@
 
 
 <!--mvn build-helper:parse-version versions:set \ release:prepare \ -DdevelopmentVersion =\${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}.0-SNAPSHOT \ release:perform -->
+
+
+
+
+<!-- mvn -U -V -ff -e -Dresume=false -DignoreSnapshots build-helper:parse-version versions:set -DdryRun=false -B 
+release:clean release:prepare release:perform 
+-Darguments="-Dmaven.test.skip=true -Dmaven.source.skip=true -Dmaven.javadoc.skip=true" 
+-DreleaseVersion=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion} 
+-DnewVersion=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}-SNAPSHOT
+ -DdevelopmentVersion=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.nextIncrementalVersion}-SNAPSHOT -->
