@@ -3,7 +3,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.7</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>https://maven.apache.org</url>
   <dependencies>
@@ -185,8 +185,4 @@
 </project>
 
 
-<<<<<<< HEAD
 <!--mvn build-helper:parse-version versions:set \ release:prepare \ -DdevelopmentVersion =\${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}.0-SNAPSHOT \ release:perform -->
-=======
-<!--mvn build-helper:parse-version versions:set \ release:prepare \ -DdevelopmentVersion =\${parsedVersion.majorVersion}.\${parsedVersion.nextMinorVersion}.0-SNAPSHOT \ release:perform -->
->>>>>>> f9018021ed622502db022c7e9b746dd6138f1e1b
